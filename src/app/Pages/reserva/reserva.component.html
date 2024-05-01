@@ -1,0 +1,49 @@
+<div class="mat-elevation-z2" style="width: 30%; padding: 30px; margin: 50px auto; display: flex;justify-content: center;">
+    <form [formGroup]="formReserva">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Nombre </mat-label>
+                <input matInput  formControlName="nombre">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Id Sala</mat-label>
+                <input matInput type="number" formControlName="idSala">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Fecha</mat-label>
+                <input matInput  formControlName="fecha">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Hora Inicio</mat-label>
+                <input matInput  formControlName="horaInicio">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Duracion de Conferencia</mat-label>
+                <input matInput type="number" formControlName="duracion">
+              </mat-form-field>
+        </div>
+        
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Es Cliente</mat-label>
+                <input matInput  formControlName="esCliente">
+              </mat-form-field>
+        </div>
+       
+
+        <div class="flex">
+            <button mat-flat-button color="primary" (click)="guardar()">Guardar</button>
+            <button mat-flat-button color="warn" (click)="volver()" style="margin-left: 8px;">Volver</button>
+        </div>
+
+    </form>
+
+</div>
